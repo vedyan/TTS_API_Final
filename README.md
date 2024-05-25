@@ -15,7 +15,7 @@ STEPS for setup :
 Steps for how to use :
 
 1. Enter text in Text Box you want to convert into speech
-2. Click on "Convert to Speech" Button - text will be converted and audible
+2. Click on "Convert to Speech" Button - text will be converted and audible - also the audio file will be saved inside "static" folder
 3. if want to continue follow up from step 1
 else
 4. Ctrl + c to close the app
