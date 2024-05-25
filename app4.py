@@ -2,6 +2,8 @@ from flask import Flask, render_template, request, send_file
 import boto3
 import os
 import uuid  # Add this import for generating unique filenames
+from dotenv import load_dotenv
+load_dotenv()
 
 app = Flask(__name__)
 
@@ -15,9 +17,9 @@ def convert_text_to_speech():
     
     # Initialize the Polly client
     polly = boto3.client('polly',
-                         aws_access_key_id='***', # Replace *** with your respective key
-                         aws_secret_access_key='****', # Replace **** with your respective key
-                         region_name='**') # Replace ** with your respective key
+                         aws_access_key_id=os.getenv('AWS_ACCESS_KEY_ID'),
+                         aws_secret_access_key=os.getenv('AWS_SECRET_ACCESS_KEY'),
+                         region_name=os.getenv('AWS_REGION'))
     
     # Call Polly's synthesize_speech API
     response = polly.synthesize_speech(
