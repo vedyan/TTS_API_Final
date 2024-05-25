@@ -8,7 +8,7 @@ STEPS for setup :
 
 1. Clone repository
 2. pip install -r requirements.txt
-3. obtain aws_access_key_id, aws_secret_access_key, and, region_name and replace with your keys in code
+3. Create a ".env" file specifying values of AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY, and, AWS_REGION
 4. python app4.py
 5. navigating to http://localhost:5000
 
