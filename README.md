@@ -1,6 +1,7 @@
 Description:
 
 This Flask application utilizes Amazon Polly for real-time text-to-speech conversion. It allows users to input text, which is then converted into speech that can be heard instantly.
+Below are the setup steps and instructions on how to use the application:
 
 STEPS for setup :
 
