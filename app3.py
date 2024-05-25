@@ -5,6 +5,9 @@ import uuid  # Add this import for generating unique filenames
 from dotenv import load_dotenv
 load_dotenv()
 
+# Get the port from the environment variable or use 4000 as default
+port = int(os.environ.get("PORT", 5000))
+
 app = Flask(__name__)
 
 @app.route('/')
@@ -44,5 +47,6 @@ def convert_text_to_speech():
     return output_file
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    # app.run(debug=True)
+    app.run(host='0.0.0.0', port=port)
 
