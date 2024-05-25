@@ -16,10 +16,9 @@ Steps for how to use :
 
 1. Enter text in Text Box you want to convert into speech
 2. Click on "Convert to Speech" Button - text will be converted and audible
-3. Speak your content - whatever you speak will be shown is terminal as "speaker:"
-4. if want to continue follow up from step 1
+3. if want to continue follow up from step 1
 else
-5. Ctrl + c to close the app
+4. Ctrl + c to close the app
 
 Credits :
 
