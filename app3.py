@@ -3,13 +3,14 @@ import boto3
 import os
 import uuid  # Add this import for generating unique filenames
 from dotenv import load_dotenv
+from flask_cors import CORS
 load_dotenv()
 
 # Get the port from the environment variable or use 4000 as default
 port = int(os.environ.get("PORT", 5000))
 
 app = Flask(__name__)
-
+CORS(app)
 @app.route('/')
 def index():
     return render_template('index3.html')
